@@ -316,7 +316,7 @@
       affiliation: [UNSW Centre for Sustainable Development Reform],
       email: [b.milligan\@unsw.edu.au] ),
     ),
-  date: [2024-11-10],
+  date: [2024-11-11],
   abstract: [Impact Exchanges require distinct measurement frameworks across asset classes (corporate securities, impact investments, commodities) due to fundamental differences in how environmental and social outcomes are quantified, verified, and reported within each market segment. We propose use of a "meta-standards" approach for incorporating measurement of environmental and social outcomes—establishing overarching principles for outcome measurement while allowing methodological flexibility - supported by a technical committee to ensure market integrity and framework interoperability. Short-term market demands for simple metrics must be balanced against systemic risks, as evidenced by carbon markets where inadequate standardization and verification led to market fragmentation and credibility issues.],
   abstract-title: "Summary.",
   margin: (bottom: 2cm,left: 2cm,right: 2cm,top: 2cm,),

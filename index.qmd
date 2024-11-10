@@ -26,7 +26,7 @@ citation:
   doi: 10.1128/AEM.02591-07
 ---
 
-# Summary of key findings
+# Key findings
 
 -   Measurement and verification of environmental and social outcomes to inform financial investment is a rapidly evolving field. A wide variety of measurement and verification methods are currently used to assess the environmental and social performance of diverse financial instruments for diverse asset classes. These methods are commonly applied as a subset of overarching frameworks and standards implementation—for positive and negative environmental, social and governance (ESG) screening, impact investment, corporate disclosure of impacts and dependencies, sustainability certification or benchmarking, and other topic areas. These frameworks and standards are characterised by highly varied degrees of: formal standardisation, public or private sector involvement, intellectual property licensing models, and transparency.
 
