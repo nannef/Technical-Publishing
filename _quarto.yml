@@ -1,0 +1,51 @@
+project:
+  type: manuscript
+
+manuscript:
+  article: index.qmd
+
+format:
+  html:
+    comments:
+      hypothesis: true
+  docx: default
+  jats: default
+
+  # (other formats)
+  # pdf: default
+  typst: 
+    template: template.typ
+    header-includes: |
+      #show table: it => {
+        set text(size: 7pt)
+        set par (
+          justify: false
+        )
+        it
+      }
+      #show heading: it => [
+        #it
+        #v(0.6em)
+      ]
+      #show figure.caption: set align(left)
+      #show footnote.entry: it => {
+        set par(first-line-indent: 0em)
+        [#h(-1em)#it]  // Pulls the number back
+      }
+    fontsize: 10pt
+    papersize: a4
+    toc: true
+    section-numbering: 1.1.a
+    columns: 1
+    keep-typ: true
+    margin:
+      top: 2cm
+      bottom: 2cm
+      left: 2cm 
+      right: 2cm
+
+execute:
+  freeze: true
+
+editor: visual
+

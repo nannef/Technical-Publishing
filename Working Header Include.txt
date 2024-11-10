@@ -1,0 +1,17 @@
+    header-includes: |
+      #show table: it => {
+        set text(size: 7pt)
+        set par (
+          justify: false
+        )
+        it
+      }
+      #show heading: it => [
+        #it
+        #v(0.6em)
+      ]
+      #show figure.caption: set align(left)
+      #show footnote.entry: it => {
+        set par(first-line-indent: 0em)
+        [#h(-1em)#it]  // Pulls the number back
+      }
