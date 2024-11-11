@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.33">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2024-11-11">
+<meta name="keywords" content="Sustainability Metrics, Market Exchanges">
+
+<title>Measurement and verification of environmental and social outcomes for a proposed Australian Impact Exchange</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-999f58d7018542847c6ca8fcd8d3f2df.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
+
+
+<meta name="citation_title" content="Measurement and verification of environmental and social outcomes for a proposed Australian Impact Exchange">
+<meta name="citation_abstract" content="Impact Exchanges require distinct measurement frameworks across asset classes (corporate securities, impact investments, commodities) due to fundamental differences in how environmental and social outcomes are quantified, verified, and reported within each market segment. We propose use of a &amp;amp;quot;meta-standards&quot; approach for incorporating measurement of environmental and social outcomes—establishing overarching principles for outcome measurement while allowing methodological flexibility - supported by a technical committee to ensure market integrity and framework interoperability. Short-term market demands for simple metrics must be balanced against systemic risks, as evidenced by carbon markets where inadequate standardization and verification led to market fragmentation and credibility issues.">
+<meta name="citation_keywords" content="Sustainability Metrics,Market Exchanges">
+<meta name="citation_author" content="Arlette Schram, Marianne Feoli, Ben Milligan">
+<meta name="citation_publication_date" content="NaN-NaN-NaN">
+<meta name="citation_cover_date" content="NaN-NaN-NaN">
+<meta name="citation_year" content="NaN">
+<meta name="citation_online_date" content="2024-11-11">
+<meta name="citation_doi" content="10.1128/AEM.02591-07">
+<meta name="citation_language" content="en">
+<meta name="citation_reference" content="citation_title=Impact washing: What it is &amp;amp;amp; how to stop it;,citation_author=C. Cote;,citation_publication_date=2022;,citation_cover_date=2022;,citation_year=2022;,citation_fulltext_html_url=https://online.hbs.edu/blog/post/impact-washing;,citation_journal_title=Harvard Business School Online;">
+<meta name="citation_reference" content="citation_title=Impact assessment study to support the development of legally binding EU nature restoration targets: Final report;,citation_author=European Commission;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_fulltext_html_url=https://op.europa.eu/en/publications;,citation_technical_report_institution=Publications Office of the European Union;">
+<meta name="citation_reference" content="citation_title=4 key trends driving private market impact funds: One CEO explains;,citation_author=M. Eisenberg;,citation_author=Z. Plakalo;,citation_publication_date=2024;,citation_cover_date=2024;,citation_year=2024;,citation_fulltext_html_url=https://www.weforum.org/agenda/2024/05/4-key-trends-driving-private-market-impact-funds/;,citation_journal_title=World Economic Forum;">
+<meta name="citation_reference" content="citation_title=The next big trend: Asian impact investing;,citation_author=F. J. Richter;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_fulltext_html_url=https://horasis.org/the-next-big-trend-asian-impact-investing/;,citation_journal_title=Horasis;">
+<meta name="citation_reference" content="citation_title=Advancing impact: A road map for social investing in asia;,citation_author=The Economist Group;,citation_publication_date=2022;,citation_cover_date=2022;,citation_year=2022;,citation_technical_report_institution=The Economist;">
+<meta name="citation_reference" content="citation_title=Nature-based solutions for comprehensive disaster and climate risk management: Toolkit for integrated planning and implementation of disaster risk reduction and climate change adaptation;,citation_author=United Nations Office for Disaster Risk Reduction;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_fulltext_html_url=https://www.undrr.org/publication/nature-based-solutions-comprehensive-disaster-and-climate-risk-management;,citation_technical_report_institution=United Nations Office for Disaster Risk Reduction;">
+<meta name="citation_reference" content="citation_title=Waste management practices in the world;,citation_author=United Nations Environment Programme;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_fulltext_html_url=https://www.unep.org/resources/report/waste-management-practices-world;,citation_technical_report_institution=United Nations Environment Programme;">
+<meta name="citation_reference" content="citation_title=Air quality and health;,citation_author=World Health Organization;,citation_publication_date=2018;,citation_cover_date=2018;,citation_year=2018;,citation_fulltext_html_url=https://www.who.int/air-pollution/air-quality-health;,citation_technical_report_institution=World Health Organization;">
+<meta name="citation_reference" content="citation_title=Climate change and cities: Special report;,citation_author=Intergovernmental Panel on Climate Change;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_fulltext_html_url=https://www.ipcc.ch/report/cities-special-report;,citation_technical_report_institution=Intergovernmental Panel on Climate Change;">
+<meta name="citation_reference" content="citation_title=Aqueduct water risk atlas;,citation_author=World Resources Institute;,citation_publication_date=2020;,citation_cover_date=2020;,citation_year=2020;,citation_fulltext_html_url=https://www.wri.org/aqueduct;,citation_technical_report_institution=World Resources Institute;">
+<meta name="citation_reference" content="citation_title=ISO 14046: Environmental management - water footprint;,citation_author=International Organization for Standardization;,citation_publication_date=2018;,citation_cover_date=2018;,citation_year=2018;,citation_fulltext_html_url=https://www.iso.org/standard/43263.html;,citation_technical_report_institution=International Organization for Standardization;">
+<meta name="citation_reference" content="citation_title=The European Green Deal;,citation_author=European Commission;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_fulltext_html_url=https://ec.europa.eu/info/publications/communication-european-green-deal_en;,citation_technical_report_institution=Publications Office of the European Union;">
+<meta name="citation_reference" content="citation_title=The Paris Agreement;,citation_author=United Nations Framework Convention on Climate Change;,citation_publication_date=2015;,citation_cover_date=2015;,citation_year=2015;,citation_fulltext_html_url=https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement;,citation_technical_report_institution=United Nations Framework Convention on Climate Change;">
+<meta name="citation_reference" content="citation_title=GRI standards;,citation_author=Global Reporting Initiative;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_fulltext_html_url=https://www.globalreporting.org/standards;,citation_technical_report_institution=Global Reporting Initiative;">
+</head>
+
+<body>
+
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Measurement and verification of environmental and social outcomes for a proposed Australian Impact Exchange</h1>
+          </div>
+
+    
+    <div class="quarto-title-meta-container">
+      <div class="quarto-title-meta-column-start">
+            <div class="quarto-title-meta-author">
+          <div class="quarto-title-meta-heading">Author</div>
+          <div class="quarto-title-meta-heading">Affiliation</div>
+          
+                <div class="quarto-title-meta-contents">
+            <p class="author">Arlette Schram, Marianne Feoli, Ben Milligan <a href="mailto:b.milligan@unsw.edu.au" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0003-1313-3956" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        UNSW Centre for Sustainable Development Reform
+                      </p>
+                  </div>
+                    </div>
+        
+        <div class="quarto-title-meta">
+
+                      
+                <div>
+            <div class="quarto-title-meta-heading">Published</div>
+            <div class="quarto-title-meta-contents">
+              <p class="date">November 11, 2024</p>
+            </div>
+          </div>
+          
+                
+              </div>
+      </div>
+      <div class="quarto-title-meta-column-end quarto-other-formats-target">
+      <div class="quarto-alternate-formats"><div class="quarto-title-meta-heading">Other Formats</div><div class="quarto-title-meta-contents"><p><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></p></div><div class="quarto-title-meta-contents"><p><a href="index.pdf"><i class="bi bi-file-pdf"></i>Typst</a></p></div><div class="quarto-title-meta-contents"><p><a href="index-meca.zip" data-meca-link="true"><i class="bi bi-archive"></i>MECA Bundle</a></p></div></div></div>
+    </div>
+
+    <div>
+      <div class="abstract">
+        <div class="block-title">Summary.</div>
+        Impact Exchanges require distinct measurement frameworks across asset classes (corporate securities, impact investments, commodities) due to fundamental differences in how environmental and social outcomes are quantified, verified, and reported within each market segment. We propose use of a “meta-standards” approach for incorporating measurement of environmental and social outcomes—establishing overarching principles for outcome measurement while allowing methodological flexibility - supported by a technical committee to ensure market integrity and framework interoperability. Short-term market demands for simple metrics must be balanced against systemic risks, as evidenced by carbon markets where inadequate standardization and verification led to market fragmentation and credibility issues.
+      </div>
+    </div>
+
+    <div>
+      <div class="keywords">
+        <div class="block-title">Keywords</div>
+        <p>Sustainability Metrics, Market Exchanges</p>
+      </div>
+    </div>
+
+    <div class="quarto-other-links-text-target">
+    </div>  </div>
+</header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary-of-key-findings" id="toc-summary-of-key-findings" class="nav-link active" data-scroll-target="#summary-of-key-findings"><span class="header-section-number">1</span> Summary of key findings</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">2</span> Introduction</a></li>
+  <li><a href="#preliminary-comments-concerning-aix" id="toc-preliminary-comments-concerning-aix" class="nav-link" data-scroll-target="#preliminary-comments-concerning-aix"><span class="header-section-number">3</span> Preliminary Comments Concerning AIX</a></li>
+  <li><a href="#current-landscape-of-measurement-and-verification-standards" id="toc-current-landscape-of-measurement-and-verification-standards" class="nav-link" data-scroll-target="#current-landscape-of-measurement-and-verification-standards"><span class="header-section-number">4</span> Current landscape of measurement and verification standards</a>
+  <ul class="collapse">
+  <li><a href="#categorisation-of-measurement-and-verification-standards" id="toc-categorisation-of-measurement-and-verification-standards" class="nav-link" data-scroll-target="#categorisation-of-measurement-and-verification-standards"><span class="header-section-number">4.1</span> Categorisation of measurement and verification standards</a></li>
+  <li><a href="#a-holistic-conceptual-framework-grounded-in-national-accounting-standards" id="toc-a-holistic-conceptual-framework-grounded-in-national-accounting-standards" class="nav-link" data-scroll-target="#a-holistic-conceptual-framework-grounded-in-national-accounting-standards"><span class="header-section-number">4.2</span> A holistic conceptual framework grounded in national accounting standards</a></li>
+  <li><a href="#socially-responsible-investment-strategies" id="toc-socially-responsible-investment-strategies" class="nav-link" data-scroll-target="#socially-responsible-investment-strategies"><span class="header-section-number">4.3</span> Socially responsible investment strategies</a></li>
+  <li><a href="#measurement-and-verification-climate-change-and-ghg-emissions" id="toc-measurement-and-verification-climate-change-and-ghg-emissions" class="nav-link" data-scroll-target="#measurement-and-verification-climate-change-and-ghg-emissions"><span class="header-section-number">4.4</span> Measurement and verification: climate change and GHG emissions</a></li>
+  <li><a href="#measurement-and-verification-of-ecological-health" id="toc-measurement-and-verification-of-ecological-health" class="nav-link" data-scroll-target="#measurement-and-verification-of-ecological-health"><span class="header-section-number">4.5</span> Measurement and verification of ecological health</a></li>
+  <li><a href="#measurement-and-verification-social-impacts" id="toc-measurement-and-verification-social-impacts" class="nav-link" data-scroll-target="#measurement-and-verification-social-impacts"><span class="header-section-number">4.6</span> Measurement and verification: social impacts</a></li>
+  </ul></li>
+  <li><a href="#market-growth-and-reporting-trends-in-sustainable-investing" id="toc-market-growth-and-reporting-trends-in-sustainable-investing" class="nav-link" data-scroll-target="#market-growth-and-reporting-trends-in-sustainable-investing"><span class="header-section-number">5</span> Market growth and reporting trends in sustainable investing</a>
+  <ul class="collapse">
+  <li><a href="#evolving-dimensions-of-impact-climate-resilience-and-energy-transitions" id="toc-evolving-dimensions-of-impact-climate-resilience-and-energy-transitions" class="nav-link" data-scroll-target="#evolving-dimensions-of-impact-climate-resilience-and-energy-transitions"><span class="header-section-number">5.1</span> Evolving dimensions of impact: climate resilience and energy transitions</a></li>
+  <li><a href="#evolving-dimensions-of-impact-social-equity-and-inclusion" id="toc-evolving-dimensions-of-impact-social-equity-and-inclusion" class="nav-link" data-scroll-target="#evolving-dimensions-of-impact-social-equity-and-inclusion"><span class="header-section-number">5.2</span> Evolving dimensions of impact: social equity and inclusion</a></li>
+  <li><a href="#integrating-holistic-ecosystem-perspectives" id="toc-integrating-holistic-ecosystem-perspectives" class="nav-link" data-scroll-target="#integrating-holistic-ecosystem-perspectives"><span class="header-section-number">5.3</span> Integrating holistic ecosystem perspectives</a></li>
+  <li><a href="#environmental-health-through-sustainable-resource-management" id="toc-environmental-health-through-sustainable-resource-management" class="nav-link" data-scroll-target="#environmental-health-through-sustainable-resource-management"><span class="header-section-number">5.4</span> Environmental health through sustainable resource management</a></li>
+  </ul></li>
+  <li><a href="#implications-for-an-australian-impact-exchange" id="toc-implications-for-an-australian-impact-exchange" class="nav-link" data-scroll-target="#implications-for-an-australian-impact-exchange"><span class="header-section-number">6</span> Implications for an Australian impact exchange</a></li>
+  <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix"><span class="header-section-number">7</span> Appendix</a></li>
+  </ul>
+<div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="index-preview.html"><i class="bi bi-journal-code"></i>Article Notebook</a></li></ul></div></nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+  
+
+
+<section id="summary-of-key-findings" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Summary of key findings</h1>
+<ul>
+<li><p>Measurement and verification of environmental and social outcomes to inform financial investment is a rapidly evolving field. A wide variety of measurement and verification methods are currently used to assess the environmental and social performance of diverse financial instruments for diverse asset classes. These methods are commonly applied as a subset of overarching frameworks and standards implementation—for positive and negative environmental, social and governance (ESG) screening, impact investment, corporate disclosure of impacts and dependencies, sustainability certification or benchmarking, and other topic areas. These frameworks and standards are characterised by highly varied degrees of: formal standardisation, public or private sector involvement, intellectual property licensing models, and transparency.</p></li>
+<li><p>Establishing public exchanges based on verified environmental and social outcomes (“Impact Exchanges”) involves careful design choices—about the specific measurement and verification methods, frameworks and standards that determine market disclosures. These design choices depend fundamentally on the scope of assets or instruments that can be traded—for example Impact Exchanges focused on:</p>
+<ul>
+<li><p>corporate securities might be best underpinned by holistic disclosure frameworks such as those maintained by the Capitals Coalition (e.g.&nbsp;the Natural Capital Protocol), or Taskforces for Nature-Related, and Climate-Related Financial Disclosures (TNFD and TCFD respectively).</p></li>
+<li><p>enabling impact investment might be best underpinned by the existing dedicated frameworks such as Global Impact Investing Network’s (GIIN) IRIS+, the Social Return on Investment (SROI), the Social Performance Task Force (SPTF), B Impact Assessment (BIA) by B Lab, and the Impact Management Project (IMP).</p></li>
+<li><p>commodities or real property may be well matched with primary low-level measurement frameworks such as those developed for specific sectoral raw material supply chains (e.g.&nbsp;apparel, minerals and metals, etc), or environmental characteristics (e.g.&nbsp;pollution levels, in-situ biodiversity).</p></li>
+</ul></li>
+<li><p>Predicating an Impact Exchange on specific primary outcome methods is fraught with risk—the Australian and global political economy for environmental and social measurement, verification, and reporting in characterised by rapid innovation and is far from a state of maturity. Different frameworks and standards have highly heterogenous subject matter scopes, methodological design and underlying commercial or values-based imperatives. This complicates any assessment of trade-offs between different exchange design choices, and creates risks of adverse consequences and path dependencies if premature choices are made to adopt certain methods, frameworks or standards.</p></li>
+<li><p>In the near term, we recommend a “meta-standards” approach to the design of the proposed Australian Impact Exchange (AIX) that focuses on preserving market integrity through transparent, principles-based and market-driven evolution of methods for measurement and verification of environmental and social outcomes. Some candidate principles, which would benefit from further consultation and research, are summarised below:</p>
+<ul>
+<li><p>Principle 1: Traded assets should disclose both their primary environmental and social outcomes (quantified or qualified as appropriate) and the methodological basis for assessing those outcomes.</p></li>
+<li><p>Principle 2: The disclosed methodological basis for disclosure should be compatible with certain quality standards intended to support alignment with general fiduciary principles and Australian consumer regulation. They should:</p>
+<ul>
+<li><p>Transparently document their definitional foundations, input data and assessment methods. Low-level definitions should be aligned with the System of Environmental-Economic Accounting (SEEA) as appropriate, in particular to avoid confusion between measurement of environmental stocks (e.g.&nbsp;the extent and/or condition of specific ecosystem types aligned to the IUCN Global Ecosystem Typology) and flows of goods and services from the environment to the economy (e.g.&nbsp;carbon sequestration, regulation of waste, flows of raw materials)–see Figure 1 below.</p></li>
+<li><p>Clearly document their functional, geographical and value chain scope coverage (e.g.&nbsp;1+2 vs 3) and use pre-defined categories aligned to the SEEA and other relevant global statistical standards.</p></li>
+</ul></li>
+</ul></li>
+<li><p>We also suggest that a standing technical committee should be incorporated into the governance planning for the AIX with a clear remit to iteratively refine and develop meta-standards concerning social and environmental outcome disclosure, and facilitate pre-competitive dialogue between different frameworks, standards and approaches.</p></li>
+<li><p>A pragmatic alternative to the “meta-standards” approach suggested above would be to establish an Impact Exchange based on clear social and environmental outcome metrics for which there is short-term market demand. One advantage of this approach is the ability to generate liquidity and positive margins that could be reinvested into improving and scaling the Impact Exchange. A key risk is that metrics may evolve in response to ad hoc demand drivers without sufficient attention to generating the coherence, robustness and transparency needed to bring investment in environmental and social outcomes to scale. The fundamental structural deficiencies of both voluntary and statutory carbon markets identified in recent years offers a pertinent cautionary tale.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="media/Picture%201.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Conceptual basis for organising environmental, social and economic metrics aligned to international statistical standards. Source: https://seea.un.org/content/about-seea"><img src="media/Picture%201.png" class="img-fluid figure-img" alt="Conceptual basis for organising environmental, social and economic metrics aligned to international statistical standards. Source: https://seea.un.org/content/about-seea"></a></p>
+<figcaption>Conceptual basis for organising environmental, social and economic metrics aligned to international statistical standards. Source: <a href="https://seea.un.org/content/about-seea" class="uri">https://seea.un.org/content/about-seea</a></figcaption>
+</figure>
+</div>
+</section>
+<section id="introduction" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Introduction</h1>
+<ol type="1">
+<li><p>The Digital Finance Cooperative Research Centre (DFCRC) is exploring research and commercialisation opportunities in sustainable finance, with a specific focus on how can digital finance toolkits be used to unlock the resources needed to transition Australia towards a more resilient, decarbonised, regenerative and just economy. As part of this agenda, the DFCRC is pursuing a project—referred to as the Australian Impact Exchange project—to develop a public digital marketplace for trading debt and equity securities in entities/ assets/funds that deliver financial returns and verified environmental and social outcomes.</p></li>
+<li><p>This Research Brief documents key findings of short-term research undertaken by the UNSW Centre for Sustainable Development Reform (CSDR) intended to inform the design of AIX pilot projects. The Brief addresses the aspects of measuring and verifying the performance of different impact dimensions—exploring existing and emerging standards, their purpose, scope, and market acceptance, and key implications relevant to the AIX project. Consistent with the expertise focus of CSDR staff, findings place a greater emphasis on nature-related measurement and verification. The findings are preliminary and subject to revision based on ongoing consultation with relevant DFCRC stakeholders.</p></li>
+</ol>
+</section>
+<section id="preliminary-comments-concerning-aix" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Preliminary Comments Concerning AIX</h1>
+<ol start="3" type="1">
+<li><p>The AIX project seeks to create a marketplace for trading securities that deliver verified environmental and social impact alongside financial returns. Accurate and credible impact measurement and verification are essential for the success of the AIX project, as they ensure that investments genuinely contribute to sustainability goals. The research will help establish standards and frameworks, filling gaps and setting benchmarks that enhance transparency, credibility, and market acceptance in sustainable finance.</p></li>
+<li><p>Socially responsible investing (SRI) encompasses a variety of strategies that focus on sustainability objectives alongside financial returns. These strategies range from impact investing to ESG incorporation and green/blue finance. Each strategy employs different objectives and can be applied to asset classes such as credits, publicly and privately traded securities, project-level initiatives, alternative investments, or other assets.</p></li>
+<li><p>Expanding the scope of the AIX from focusing solely on impact investment to include other SRI strategies can enhance its appeal and effectiveness. For example, investing in vehicles that employ ESG incorporation can encourage best-practice industry leaders by integrating ESG factors into financial analysis and investment decisions, aligning with standards like the Taskforce on Nature-related Financial Disclosures (TNFD). At the same time, ESG performance strategies can actively engage companies to improve their practices and continuously track ESG momentum. Impact investing can unlock novel nature-based solutions or encourage capital flow towards the circular economy. Green finance can fund projects with specific environmental benefits through instruments like green and climate bonds, while social finance strategies can address pressing social issues through social and impact bonds. Governance and ethical strategies, such as active ownership and corporate governance investing, can drive corporate change and align investments with personal values. Measuring and verifying impact refers to the positive environmental or social impacts of impact investment.</p></li>
+<li><p>Extending beyond impact investments can broaden the scope of the AIX and create a tailored approach to assessing and driving sustainable development outcomes overall. A comprehensive overview of suitable investment strategies to implement in AIX can be found in the tables in the Appendix.</p></li>
+<li><p>Impact investment focuses on key characteristics such as intentionality<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, measurability<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>, additionality<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> and evidence-based<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>, ensuring that investments create positive outcomes that would not occur otherwise. Impact Investments must align with fiduciary duty and social investing, which requires asset managers to act in the best interest of beneficiaries and ensure investments align with specified social or environmental objectives (Finance UNEP Initiative, 2020).</p></li>
+</ol>
+<!-- -->
+<ol start="8" type="1">
+<li>In contrast, ESG reporting focuses on the broader disclosure of an organisation’s environmental, social, and governance practices. Standards such as the Global Reporting Initiative (GRI), Sustainability Accounting Standards Board (SASB), Task Force on Climate-related Financial Disclosures (TCFD), and the Greenhouse Gas Protocol (GHG Protocol) help organisations provide transparent information on their ESG performance, manage related risks, and ensure regulatory compliance. Integrating various strategies within AIX could be beneficial to ensure robust impact measurement and verification, enhancing credibility and effectiveness in driving sustainable development:</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="media/Picture%202.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Methodology for market studies on sustainability-related investments. Source: https://www.eurosif.org/wp-content/uploads/2024/02/2024.02.15-Final-Report-Eurosif-Classification_2024.pdf"><img src="media/Picture%202.png" class="img-fluid figure-img" alt="Methodology for market studies on sustainability-related investments. Source: https://www.eurosif.org/wp-content/uploads/2024/02/2024.02.15-Final-Report-Eurosif-Classification_2024.pdf"></a></p>
+<figcaption>Methodology for market studies on sustainability-related investments. Source: <a href="https://www.eurosif.org/wp-content/uploads/2024/02/2024.02.15-Final-Report-Eurosif-Classification_2024.pdf" class="uri">https://www.eurosif.org/wp-content/uploads/2024/02/2024.02.15-Final-Report-Eurosif-Classification_2024.pdf</a></figcaption>
+</figure>
+</div>
+<ol start="9" type="1">
+<li><p>The AIX will need to adhere to the characteristics of each asset and strategy to ensure investments deliver verified social and environmental outcomes alongside financial returns. The assessment should be conducted before investment, with ongoing reporting to measure impact during the investment and the use of appropriate reporting standards for communicating effect in the form of reporting.</p></li>
+<li><p>The landscape of reporting standards, guidance, and measurement frameworks is broad and often subject to national regulations, legislation, objectives, and approaches. For AIX to ensure that investments are financially viable and contribute meaningfully to social and environmental goals, it is recommended that this landscape be analysed and a comprehensive measurement and verification approach be created. Such an approach would require developing a “meta” governance structure based on inclusive and comprehensive standards.</p></li>
+</ol>
+</section>
+<section id="current-landscape-of-measurement-and-verification-standards" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Current landscape of measurement and verification standards</h1>
+<ol start="11" type="1">
+<li><p>A thorough analysis of the measurement and verification standards landscape ensures that investments within the AIX contribute to social, socio-economic and environmental goals. The meta-governance structure should integrate the critical aspects of commonly used standards tailored to different socially responsible investing strategies. For company reporting, frameworks such as the Global Reporting Initiative (GRI), the Taskforce on Nature-related Financial Disclosures (TNFD), the Task Force on Climate-related Financial Disclosures (TCFD), and the Sustainability Accounting Standards Board (SASB) provide essential guidelines for companies to report their ESG performance.</p></li>
+<li><p>These guidelines help generate verified scores that can be used on the AIX to assess ESG score measurement and verification, offering transparency and credibility to investors and helping them understand the efficiency and implementation of an ESG-based investment strategy. For investor reporting, standards like the UN Principles for Responsible Investment (UNPRI), the Global Impact Investing Network (GIIN), and the Impact Management Project (IMP) guide investors in aligning their strategies with responsible investment principles and measuring impact. These standards can be leveraged within the AIX marketplace to provide investors with precise, standardised data, facilitating informed decision-making and ensuring that investments, such as impact investments, meet desired social and environmental criteria.</p></li>
+<li><p>Regarding GHG emissions, accounting approaches range from VERRA and Accounting for Nature to the ISO standards and the EU Emissions Trading System (EU ETS). Comprehensive ecosystem assessments can rely on the System of Environmental-Economic Accounting (SEEA), which can build a critical basis for integrating more holistic and comprehensive impact assessments. While IRIS+ is commonly used to quantify or report qualitatively on the impact of impact investments, integrating SEEA can enhance the ability to assess broader ecological impacts systematically and from a more holistic perspective. Incorporating varied frameworks can support the robust and transparent outcome measurement and verification of a digital finance exchange, foster trust, and attract diverse investors.</p></li>
+</ol>
+<section id="categorisation-of-measurement-and-verification-standards" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="categorisation-of-measurement-and-verification-standards"><span class="header-section-number">4.1</span> Categorisation of measurement and verification standards</h2>
+<ol start="14" type="1">
+<li>The current measurement and verification standards landscape for institutional investment can be differentiated based on the applied strategy (for example, ESG) or impact dimensions such as climate, ecological health, and social impact. This classification can help identify the relevant standards for each dimension, guiding principles, and frameworks. The impact dimensions cover the primary areas where impacts occur and are reported on, aligning them with the AIX project’s objectives. The following illustration by the IRIS shows the interconnectedness of IRIS+ impact categories and themes as of May 2021 and can help guide meta governance structures for desired outcomes:</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="media/Picture%203.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Interconnectedness of IRIS+ Impact Categories and Themes as of May 2021"><img src="media/Picture%203.jpg" class="img-fluid figure-img" alt="Interconnectedness of IRIS+ Impact Categories and Themes as of May 2021"></a></p>
+<figcaption>Interconnectedness of IRIS+ Impact Categories and Themes as of May 2021</figcaption>
+</figure>
+</div>
+<ol start="15" type="1">
+<li>The following paragraphs discuss different groups of impact dimensions, relevant standards, and guiding frameworks for impact and ESG assessment, where applicable across the following general tiers:</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="media/Picture%204.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Illustrative tiers of analytical approaches to impact and ESG assessment"><img src="media/Picture%204.jpg" class="img-fluid figure-img" alt="Illustrative tiers of analytical approaches to impact and ESG assessment"></a></p>
+<figcaption>Illustrative tiers of analytical approaches to impact and ESG assessment</figcaption>
+</figure>
+</div>
+<ol start="16" type="1">
+<li>Dividing the structure of the impact assessment within the AIX, pursuant to categories such as those shown in Tier 3 makes is easier to identify and apply the applicable standards for specific types of measurement and verification.</li>
+</ol>
+</section>
+<section id="a-holistic-conceptual-framework-grounded-in-national-accounting-standards" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="a-holistic-conceptual-framework-grounded-in-national-accounting-standards"><span class="header-section-number">4.2</span> A holistic conceptual framework grounded in national accounting standards</h2>
+<ol start="17" type="1">
+<li><p>The System of Environmental-Economic Accounting (SEEA) is a framework that integrates environmental and economic data to provide a detailed understanding of the interactions between the environment and the economy. SEEA is designed to measure the stocks and flows of natural resources, including water, forests, minerals, and land, as well as the services these resources provide. It offers a standardised approach to capturing the economic value of natural capital and the costs associated with environmental degradation and resource depletion. By linking ecological data with economic accounts, SEEA enables policymakers, researchers, and environmental managers to assess the sustainability of economic activities and make informed decisions about resource management and environmental conservation.</p></li>
+<li><p>SEEA consists of several components, including physical flow, environmental asset, and monetary flow accounts. Physical flow accounts track the movement of natural inputs, products, and residuals between the environment and the economy. Environmental asset accounts monitor the stocks and changes in natural resource stocks over time, providing insights into the availability and use of resources. Monetary flow accounts record the economic transactions related to environmental protection and resource management, such as expenditures on pollution control and investments in renewable energy. SEEA provides a holistic view of how natural capital contributes to economic well-being and how economic activities impact the environment. This integrated approach makes SEEA a valuable tool for assessing the sustainability of development practices, evaluating the effectiveness of environmental policies, and guiding strategic planning for sustainable development.</p></li>
+<li><p>Adopting SEEA as the foundational framework for the AIX meta-governance ensures a robust, integrated approach to assessing and driving sustainable development outcomes. SEEA provides the date to establish a baseline for evaluating the effectiveness of impact reporting initiatives such as IRIS+ and the Impact Management Project (IMP). These initiatives focus on specific impact metrics but can lack a comprehensive perspective on broader environmental and socio-economic outcomes. Using SEEA as a core conceptual organising framework offers the following advantages:</p>
+<ul>
+<li><p>Benchmark Impact Reporting: SEEA’s comprehensive data framework on natural resource stocks, flows, and economic transactions provide a benchmark against which the impacts reported by initiatives like IRIS+ can be compared.</p></li>
+<li><p>Verify Outcomes: SEEA’s standardised framework can be used to verify reported impacts, ensuring that they reflect real improvements in ecological health and resource management. This can help identify discrepancies between reported impacts and actual outcomes within ecosystems.</p></li>
+<li><p>Understand Holistic Impacts: SEEA’s integration of environmental and economic data helps understand how specific impacts contribute to broader sustainability goals. For instance, while an initiative may report positive social impact, SEEA can provide insights into whether these social improvements also lead to sustainable environmental outcomes and support quantifying those improvements.</p></li>
+<li><p>Identify Gaps and Opportunities: By comparing impact reports with SEEA data, AIX can identify areas where impact initiatives may fall short or overlook critical aspects of sustainability. This can guide the deployment of capital towards effective impact investment.</p></li>
+<li><p>Support Strategic Planning: SEEA’s holistic approach aids in strategic planning by providing a detailed understanding of the interactions between economic activities and natural resources. This enables AIX to design investment strategies that are both financially viable and environmentally sustainable.</p></li>
+</ul></li>
+</ol>
+</section>
+<section id="socially-responsible-investment-strategies" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="socially-responsible-investment-strategies"><span class="header-section-number">4.3</span> Socially responsible investment strategies</h2>
+<ol start="20" type="1">
+<li>Within the broad range of Environmental, Social and Governance (ESG) Reporting Standards, Climate-related disclosure and reporting standards, such as the Task Force on Climate-related Financial Disclosures (TCFD) and the Carbon Disclosure Project (CDP), guide companies in presenting environmental and social-related information transparently and comprehensively in their financial reports and other disclosures. These standards are crucial: quantification standards ensure accurate emissions data, while disclosure standards promote transparency and informed decision-making, driving regulatory compliance and market trust. The table below summarises existing and commonly used climate-related disclosure and reporting standards:</li>
+</ol>
+<!--- This code reads a table from a csv file and displays it at the desired font size. Change the header.tex for PDF output
+-->
+<div class="cell">
+<style type="text/css">
+.small .table {font-size: 11px;}
+</style>
+<a class="quarto-notebook-link" id="nblink-1" href="index-preview.html">Source: Article Notebook</a></div>
+<div class="small">
+<table class="caption-top table">
+<caption>Overview of Climate-related Disclosure and Reporting Standards.</caption>
+<colgroup>
+<col style="width: 2%">
+<col style="width: 18%">
+<col style="width: 16%">
+<col style="width: 17%">
+<col style="width: 27%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Region</th>
+<th style="text-align: left;">Standard</th>
+<th style="text-align: left;">Scope</th>
+<th style="text-align: left;">Coverage</th>
+<th style="text-align: left;">Purpose</th>
+<th style="text-align: left;">Market Acceptance</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Global</td>
+<td style="text-align: left;">Taskforce on Climate-related Financial Disclosures</td>
+<td style="text-align: left;">Climate-related financial disclosures</td>
+<td style="text-align: left;">Climate risk and opportunities</td>
+<td style="text-align: left;">Provide recommendations for diclosing climate-related risks and opportunities</td>
+<td style="text-align: left;">Wide adopted espectially in finance</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Global</td>
+<td style="text-align: left;">Carbon Disclosure Project</td>
+<td style="text-align: left;">Climate and environmental reporting</td>
+<td style="text-align: left;">Climate change, water, security, deforestation</td>
+<td style="text-align: left;">Enable compnaies to measure and manage their environmental impacts</td>
+<td style="text-align: left;">Widely used globally</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Global</td>
+<td style="text-align: left;">Integrated Reporting</td>
+<td style="text-align: left;">Financial, social and environmental reporting</td>
+<td style="text-align: left;">Financial performance, ecological, social metrics</td>
+<td style="text-align: left;">Promote transparency and holistic reporting</td>
+<td style="text-align: left;">Increasingly adopted by companies</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Global</td>
+<td style="text-align: left;">Science-based Targets Initiative</td>
+<td style="text-align: left;">Set science-based climate targets</td>
+<td style="text-align: left;">Corporate GHG emissions</td>
+<td style="text-align: left;">Help companies set GHG reduction targets in line with climate science</td>
+<td style="text-align: left;">Widely recognised especially in corporate sector</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">USA</td>
+<td style="text-align: left;">Sustainability Accounting Standards Board</td>
+<td style="text-align: left;">Industry-specific standards</td>
+<td style="text-align: left;">Environmental, social, governance</td>
+<td style="text-align: left;">Provide industry-specific standards</td>
+<td style="text-align: left;">Growing adoption particularly in the US</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Global</td>
+<td style="text-align: left;">Climate Disclosure Standards Board</td>
+<td style="text-align: left;">Climate-related financial disclosures</td>
+<td style="text-align: left;">Environmental information</td>
+<td style="text-align: left;">Integrate climate-related information into mainstream financial reporting</td>
+<td style="text-align: left;">Increasingly recognised globally</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Global</td>
+<td style="text-align: left;">Global Reporting Initiative</td>
+<td style="text-align: left;">Sustainability reporting standards</td>
+<td style="text-align: left;">environmental, social, governance</td>
+<td style="text-align: left;">Provide comprehensive sustainability reporting guidelines</td>
+<td style="text-align: left;">Widely used globally</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--- End of code snippet
+-->
+<ol start="21" type="1">
+<li>The figure below illustrates the role of guiding principles and frameworks for ESG investment assessment from an investor perspective. Their associated indices and assessment support tools are crucial for investors looking to integrate ESG factors into their investment decisions. They help investors assess their portfolio’s sustainability and ethical impacts, driving informed investment strategies.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="media/Picture%205.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Role of guiding principles and frameworks for ESG investment assessment"><img src="media/Picture%205.jpg" class="img-fluid figure-img" alt="Role of guiding principles and frameworks for ESG investment assessment"></a></p>
+<figcaption>Role of guiding principles and frameworks for ESG investment assessment</figcaption>
+</figure>
+</div>
+<ol start="22" type="1">
+<li>Impact investment refers to investments made to generate positive, measurable social and environmental benefits alongside a financial return (Godeke &amp; Briaud, 2021; Bundesinitiative Impact Investing; GIIN, 2022). The figure below illustrates the role of key guiding principles and frameworks for assessment of impact investment performance, alongside key measurement and verification approaches.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="media/Picture%206.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Role of guiding principles and frameworks for ESG investment assessment"><img src="media/Picture%206.jpg" class="img-fluid figure-img" alt="Role of guiding principles and frameworks for ESG investment assessment"></a></p>
+<figcaption>Role of guiding principles and frameworks for ESG investment assessment</figcaption>
+</figure>
+</div>
+<ol start="23" type="1">
+<li><p>IRIS+ provides a comprehensive global catalogue of metrics impact investors use to measure social, environmental, and financial performance across sectors such as education, healthcare, and economic development. SROI translates social outcomes into monetary values, offering a method to measure social value created by investments in various sectors, including community development and healthcare. SPTF focuses on assessing social performance in the microfinance sector, while BIA evaluates companies’ social and environmental performance, emphasising governance, workers, community, environment, and customers. IMP provides a consensus on measuring, managing, and reporting impacts on people and the planet, covering multiple sectors and impact themes.</p></li>
+<li><p>Each framework has specific requirements for measurement and verification. IRIS+ and IMP emphasise standardised metrics and consistent data collection, with third-party audits often used for verification. SROI requires detailed data on inputs, outputs, and financial proxies, with stakeholder engagement and third-party validation. SPTF uses outreach and social responsibility indicators, with self-reporting and external audits. BIA involves a structured questionnaire and comprehensive assessment, verified through third-party audits for B Corp certification. The most widely accepted standards include IRIS+, IMP, and BIA, which are highly regarded globally among impact investors and financial institutions. SROI and SPTF are also gaining acceptance, particularly in the non-profit and microfinance sectors.</p></li>
+<li><p>Despite their wide acceptance, these frameworks often overlap in their methodologies and objectives. For example, IRIS+ and IMP share common elements in defining and standardising impact metrics. However, gaps remain in sector-specific metrics for niche areas and challenges in assigning monetary values to all social outcomes, as seen with SROI. Understanding these overlaps and gaps is crucial for developing a comprehensive and credible impact assessment strategy, ensuring investments align with broader social and environmental goals.</p></li>
+</ol>
+</section>
+<section id="measurement-and-verification-climate-change-and-ghg-emissions" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="measurement-and-verification-climate-change-and-ghg-emissions"><span class="header-section-number">4.4</span> Measurement and verification: climate change and GHG emissions</h2>
+<ol start="26" type="1">
+<li><p>The Greenhouse Gas Protocol (GHG Protocol) and ISO 14064 are globally accepted standards and provide universal frameworks for measuring and managing emissions. The landscape of GHG accounting standards is broad, and some standards are more specific to certain regions due to factors like regulatory requirements, which entail adherence to local laws and policies. Market acceptance varies by region and is influenced by local stakeholder expectations and economic contexts. This regional differentiation ensures that standards align with unique environmental priorities, financial structures, and cultural factors, facilitating compliance and enhancing strategic implementation for organisations.</p></li>
+<li><p>The GHG Protocol and ISO 14064 are mature and widely adopted standards that provide comprehensive frameworks. Their global acceptance and methodologies make them essential tools for organisations committed to transparency, regulatory compliance, and effective climate action. The GHG protocol provides comprehensive standards and guidelines for organisations to quantify and report their GHG emissions, covering various sectors and activities. It provides methodologies for calculating emissions from direct (Scope 1), indirect energy (Scope 2), and other indirect sources (Scope 3).</p>
+<ul>
+<li>ISO 14064 is an international standard developed by the International Organization for Standardization (ISO) that provides guidelines and requirements for greenhouse gas emissions and removals. ISO 14064 is divided into three parts:</li>
+<li>ISO 14064-1: Specifies principles and requirements for quantifying and reporting GHG emissions and removals at the organisation level.</li>
+<li>ISO 14064-2: Guides at the project level for quantifying, monitoring, and reporting GHG emission reductions or removal enhancements.</li>
+<li>ISO 14064-3 Offers guidelines for validating and verifying GHG assertions, ensuring the accuracy and reliability of GHG reports.</li>
+</ul></li>
+<li><p>Other standards that focus on climate change and GHG emissions are outlined below:</p></li>
+</ol>
+<!--- This code reads a table from a csv file and displays it at the desired font size. Change the header.tex for PDF output
+-->
+<div class="cell">
+<style type="text/css">
+.small .table {font-size: 10px;}
+</style>
+</div>
+<div class="small">
+<table class="caption-top table">
+<caption>Overview of Climate Change and GHG Emissions Measurement and Verification Frameworks.</caption>
+<colgroup>
+<col style="width: 4%">
+<col style="width: 18%">
+<col style="width: 22%">
+<col style="width: 9%">
+<col style="width: 26%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Region</th>
+<th style="text-align: left;">Standard</th>
+<th style="text-align: left;">Scope</th>
+<th style="text-align: left;">Coverage</th>
+<th style="text-align: left;">Purpose</th>
+<th style="text-align: left;">Market Acceptance</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Global</td>
+<td style="text-align: left;">Greenhouse Gas Protocol (GHG Protocol)</td>
+<td style="text-align: left;">Corporate, Project, Value Chain (Scope 1, 2, 3)</td>
+<td style="text-align: left;">Global</td>
+<td style="text-align: left;">Provide standardized approach for GHG accounting transparency consistency</td>
+<td style="text-align: left;">Widely adopted by businesses, governments, NGOs</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Global</td>
+<td style="text-align: left;">ISO 14064</td>
+<td style="text-align: left;">Organization (Part 1), Project (Part 2), Verification (Part 3)</td>
+<td style="text-align: left;">Global</td>
+<td style="text-align: left;">Guidelines for quantifying, reporting, and verifying GHG emissions</td>
+<td style="text-align: left;">Widely recognized and implemented globally</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Europe</td>
+<td style="text-align: left;">EU Emissions Trading System (EU ETS)</td>
+<td style="text-align: left;">Cap-and-trade system for power, industry, aviation</td>
+<td style="text-align: left;">Europe</td>
+<td style="text-align: left;">Regulate and reduce GHG emissions through a cap-and-trade system</td>
+<td style="text-align: left;">Major compliance tool in Europe</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Africa</td>
+<td style="text-align: left;">African Regional Standard (ARS 902)</td>
+<td style="text-align: left;">GHG emissions inventory</td>
+<td style="text-align: left;">Africa</td>
+<td style="text-align: left;">Standardized approach for GHG emissions inventory</td>
+<td style="text-align: left;">Increasing adoption across African countries</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Africa</td>
+<td style="text-align: left;">South Africa’s NGER Regulations</td>
+<td style="text-align: left;">Mandatory GHG reporting</td>
+<td style="text-align: left;">South Africa</td>
+<td style="text-align: left;">Regulatory compliance and GHG management</td>
+<td style="text-align: left;">Key regulation in South Africa</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Americas</td>
+<td style="text-align: left;">California Cap-and-Trade Program</td>
+<td style="text-align: left;">Cap-and-trade system for emissions</td>
+<td style="text-align: left;">United States (California)</td>
+<td style="text-align: left;">Regulate and reduce GHG emissions through a cap-and-trade system</td>
+<td style="text-align: left;">Major compliance tool in California</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Americas</td>
+<td style="text-align: left;">Climate Registry General Reporting Protocol (GRP)</td>
+<td style="text-align: left;">Voluntary GHG reporting</td>
+<td style="text-align: left;">Americas</td>
+<td style="text-align: left;">Standardize GHG emissions reporting for voluntary programs</td>
+<td style="text-align: left;">Widely used in North America</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Asia Pacific</td>
+<td style="text-align: left;">Japan’s GHG Accounting and Reporting System</td>
+<td style="text-align: left;">Mandatory GHG reporting</td>
+<td style="text-align: left;">Japan</td>
+<td style="text-align: left;">Regulatory compliance and GHG management</td>
+<td style="text-align: left;">Major regulation in Japan</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--- End of code snippet
+-->
+</section>
+<section id="measurement-and-verification-of-ecological-health" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="measurement-and-verification-of-ecological-health"><span class="header-section-number">4.5</span> Measurement and verification of ecological health</h2>
+<ol start="29" type="1">
+<li><p>Standards for measuring ecological health are essential for protecting and restoring biodiversity and ecosystem services. The frameworks focus on assessing and reporting the condition of natural assets such as soils, vegetation, and fauna. The following paragraphs introduces various ecological health standards and compares them, analysing their purpose, scope, market acceptance, strengths, and weaknesses to highlight their roles in impact measurement.</p></li>
+<li><p>Accounting for Nature is a framework designed to measure and report the condition of environmental assets, offering a standardised approach to assessing ecosystem health. It encompasses a wide range of natural resources, providing data to support informed decision-making in environmental management. Its science-based methodology aims to enhance the understanding and conservation of ecosystems, aligning with global environmental policies.</p></li>
+<li><p>The framework offers extensive geographic coverage, which applies to diverse ecosystems globally, from tropical rainforests to arid landscapes. Its sectoral coverage spans agriculture, forestry, conservation, and urban planning, providing a tool for various environmental management practices. The framework’s impact coverage includes a wide range of ecological assets, such as soils, vegetation, and fauna, ensuring a comprehensive assessment of ecosystem health.</p></li>
+<li><p>The framework employs a set of measurement and verification requirements to ensure accurate and reliable ecological assessments. Environmental Condition Accounts (ECA) and the Environmental Condition Index (Econd®), which ranges from 0 to 100, quantify the state of environmental assets. Indicators must be scientifically validated, and detailed data collection instructions ensure consistency. Reference condition benchmarks represent the asset’s natural or best possible state. Verification involves independent audits by accredited experts to provide methods and data that meet stringent criteria. The framework specifies accuracy levels (95%, 90%, or 80%) to indicate precision, with higher levels requiring more detailed methods. Transparency is maintained through complete documentation of data sources, methodologies, and calculations. Continuous improvement processes ensure the framework incorporates new scientific knowledge and enhances robustness over time.</p></li>
+<li><p>The Natural Capital Protocol<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> is a framework for assessing and valuing natural capital impacts and dependencies. It is divided into four stages: Frame, Scope, Measure and Value, and Apply. The Frame stage helps stakeholders understand the importance of evaluating natural capital and introduces them to key concepts. This stage involves preparing for the assessment by understanding the context and objectives and identifying the relevant stakeholders. The Scope stage defines the assessment’s objectives and boundaries and identifies the relevant natural capital impacts and dependencies. This stage sets the parameters for what will be assessed, including the geographical and temporal scope and the specific impacts and dependencies.</p></li>
+<li><p>The Measure and Value stage quantifies and values the identified impacts and dependencies using qualitative, quantitative, and monetary methods. This involves collecting data, applying appropriate valuation techniques, and calculating the overall impact on natural capital. Both biophysical measurement and economic valuation are used to provide a comprehensive assessment. The Apply stage interprets the results, validates their accuracy, and integrates them into decision-making processes. This involves analysing the results, assessing the financial and environmental implications, and communicating the findings to stakeholders.</p></li>
+</ol>
+<!-- -->
+<ol start="35" type="1">
+<li>As outlined in the table below, other frameworks for nature-related measurement and verification have proliferated in recent years, with heterogenous conceptual foundations and scope.</li>
+</ol>
+<!--- This code reads a table from a csv file and displays it at the desired font size. Change the header.tex for PDF output
+-->
+<div class="cell">
+<style type="text/css">
+.small .table {font-size: 10px;}
+</style>
+</div>
+<div class="small">
+<table class="caption-top table">
+<caption>Overview of Measurement and Verification Frameworks focused on Ecological Health.</caption>
+<colgroup>
+<col style="width: 10%">
+<col style="width: 17%">
+<col style="width: 19%">
+<col style="width: 15%">
+<col style="width: 18%">
+<col style="width: 18%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Framework</th>
+<th style="text-align: left;">Purpose</th>
+<th style="text-align: left;">Scope</th>
+<th style="text-align: left;">Market acceptance</th>
+<th style="text-align: left;">Strengths</th>
+<th style="text-align: left;">Weaknesses</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">UN CBD Indicators</td>
+<td style="text-align: left;">Measures and monitors biodiversity</td>
+<td style="text-align: left;">Species populations, habitat extent, ecosystem health</td>
+<td style="text-align: left;">High; used globally for biodiversity targets</td>
+<td style="text-align: left;">Provides broad biodiversity indicators</td>
+<td style="text-align: left;">May lack specificity for detailed ecosystem health assessments</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">IUCN Red List of Ecosystems</td>
+<td style="text-align: left;">Assesses conservation status of ecosystems</td>
+<td style="text-align: left;">Risk of ecosystem collapse</td>
+<td style="text-align: left;">High; recognized globally</td>
+<td style="text-align: left;">Standardized risk assessment for ecosystems</td>
+<td style="text-align: left;">Primarily focused on risk, not comprehensive health metrics</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Living Planet Index (LPI)</td>
+<td style="text-align: left;">Tracks changes in global vertebrate species populations</td>
+<td style="text-align: left;">Population trends of vertebrate species</td>
+<td style="text-align: left;">High; widely used by conservation organizations</td>
+<td style="text-align: left;">Provides trends in biodiversity</td>
+<td style="text-align: left;">Limited to vertebrate species, not all biodiversity</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Natural Capital Protocol</td>
+<td style="text-align: left;">Identifies, measures, and values natural capital impacts</td>
+<td style="text-align: left;">Ecosystems, biodiversity, ecosystem services</td>
+<td style="text-align: left;">Widely accepted in corporate sector</td>
+<td style="text-align: left;">Comprehensive business-oriented impact assessment</td>
+<td style="text-align: left;">May lack detailed ecological metrics</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ecosystem Services Framework (ESF)</td>
+<td style="text-align: left;">Assesses and values ecosystem services</td>
+<td style="text-align: left;">Provisioning, regulating, cultural, supporting services</td>
+<td style="text-align: left;">Gaining acceptance in policy-making</td>
+<td style="text-align: left;">Integrates ecological and socio-economic aspects</td>
+<td style="text-align: left;">Implementation can be complex and subjective</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Biodiversity Intactness Index (BII)</td>
+<td style="text-align: left;">Measures the intactness of biodiversity in a region</td>
+<td style="text-align: left;">Biodiversity at species level</td>
+<td style="text-align: left;">Growing in conservation research</td>
+<td style="text-align: left;">Effective for monitoring biodiversity changes</td>
+<td style="text-align: left;">Focused primarily on biodiversiy, not broader ecological health</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Accounting for Nature</td>
+<td style="text-align: left;">Measures and reports on the condition of environmental assets</td>
+<td style="text-align: left;">Ecological health of natural resources (soils, vegetation, fauna)</td>
+<td style="text-align: left;">Emerging; primarily in Australia, expanding globally</td>
+<td style="text-align: left;">Standardised ecological health metrics; comprehensive assessment</td>
+<td style="text-align: left;">Limited broader application until further refinement globally</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--- End of code snippet
+-->
+<ol start="36" type="1">
+<li><p>Several factors are considered when classifying standards according to their widespread acceptance. Accounting for Nature, for example, is an emerging framework primarily developed with a focus on Australia, though it is expanding globally. Its adoption and integration into business and policy processes are still gaining traction. Many organisations and countries are in the early stages of implementing this framework, testing its methodologies, and assessing its practicality and effectiveness. The same can be said about its relevance in impact assessment.</p></li>
+<li><p>On the other hand, the Natural Capital Protocol is widely accepted, having been developed through collaboration with multiple global organisations. It has been broadly adopted by businesses and industries worldwide, encouraging integration with existing business reporting frameworks such as financial and sustainability reporting. This widespread recognition and endorsement by international organisations has led to its higher degree of acceptance and implementation.</p></li>
+<li><p>Accounting for Nature emphasises measuring the condition of environmental assets with a standardised approach to ecological health metrics. While this focus is valuable, it can limit broader application until further refinement and validation across diverse contexts. In contrast, the Natural Capital Protocol offers comprehensive impact measurement, assessing business impacts on natural capital across all industries and geographies. This approach to identifying, measuring, and valuing natural capital impacts makes it more adaptable and relevant for many businesses.</p></li>
+</ol>
+</section>
+<section id="measurement-and-verification-social-impacts" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="measurement-and-verification-social-impacts"><span class="header-section-number">4.6</span> Measurement and verification: social impacts</h2>
+<ol start="39" type="1">
+<li><p>Leading social impact measures in institutional investment include several prominent frameworks and standards that aim to provide consistency, transparency, and comparability in measuring social outcomes. The frameworks address various constraints in impact investing, such as diverse definitions of impact, the need for internationally comparable data, and underdeveloped impact measurement practices. Among the most recognised frameworks are the Global Impact Investing Network’s (GIIN) IRIS+, the Social Return on Investment (SROI), the Social Performance Task Force (SPTF), B Impact Assessment (BIA) by B Lab, and the Impact Management Project (IMP).</p></li>
+<li><p>The landscape of existing and emerging measurement and verification standards and frameworks for social impact is diverse, commonly used and emerging frameworks can be summarised in the following table:</p></li>
+</ol>
+<!--- This code reads a table from a csv file and displays it at the desired font size. Change the header.tex for PDF output
+-->
+<div class="cell">
+<style type="text/css">
+.small .table {font-size: 10px;}
+</style>
+</div>
+<div class="small">
+<table class="caption-top table">
+<caption>Overview of Measurement and Verification Frameworks for Social Impact.</caption>
+<colgroup>
+<col style="width: 6%">
+<col style="width: 33%">
+<col style="width: 21%">
+<col style="width: 18%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Framework</th>
+<th style="text-align: left;">Purpose and Coverage</th>
+<th style="text-align: left;">Average</th>
+<th style="text-align: left;">Measurement and Verification Requirements</th>
+<th style="text-align: left;">Overlap and Gaps</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">IRIS+ by GIIN</td>
+<td style="text-align: left;">Provide a comprehensive catalog of social, environmental, and financial performance metrics. Global; diverse sectors such as education, healthcare, and economic development</td>
+<td style="text-align: left;">Standardised metrics, consistent data collection, self-assessment, third-party audits.</td>
+<td style="text-align: left;">Highly accepted globally among impact investors and financial institutions.</td>
+<td style="text-align: left;">Overlaps with other frameworks like IMP. Gaps in sector-specific metrics for niche areas.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Social Performance Task Force (SPTF)</td>
+<td style="text-align: left;">Provides standards and guidelines for assessing social performance in microfinance and inclusive finance sectors. Global; specific to microfinance and inclusive finance sectors</td>
+<td style="text-align: left;">Indicators for outreach, client protection, social responsibility, self-reporting, external audits.</td>
+<td style="text-align: left;">Widely accepted in the microfinance sector.</td>
+<td style="text-align: left;">Overlaps with sector-specific stndards like the Universal Standards for Social Performance Management. Gaps in the broader financial inclusion metrics.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Impact Management Project (IMP)</td>
+<td style="text-align: left;">Provides a consensus on how to measure, manage, and report impacts on people and the planet. Global; comprehensive coverage across multiple sectors and impact themes.</td>
+<td style="text-align: left;">Five dimensions of impact: what, who, how much, contribution, risk; self-assessment, peer reviews.</td>
+<td style="text-align: left;">Highly accepted among impact investors and financial institutions.</td>
+<td style="text-align: left;">Overlaps with IRIS+ and other impact measurement frameworks. Gaps in detailed sector-specific guidelines.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">B Impact Assessment (BIA) by B Lab</td>
+<td style="text-align: left;">Assess social and environmental performance of companies, focusing on governance, workers, community, environment, and customers. Global; socially responsible business across sectors.</td>
+<td style="text-align: left;">Structured questionnaire, comprehensive assessment, third-party audits for B Corp certification.</td>
+<td style="text-align: left;">High acceptance among socially responsible businesses and investors.</td>
+<td style="text-align: left;">Overlaps with ESG frameworks. Gaps include the depth of impact measurement in specific sectors.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Social Return on Investment (SROI)</td>
+<td style="text-align: left;">Measures social value created by translating social outcomes into monetary values. Global; applicable to community development, education, healthcare, and more.</td>
+<td style="text-align: left;">Detailed data on inputs, outputs, outcomes, financial proxies, stakeholder engagement, third-party validation.</td>
+<td style="text-align: left;">Growing acceptance, particularly in the non-profit and public sectors.</td>
+<td style="text-align: left;">Overlaps with cost-benefit analysis approaches. Gaps include challenges in the assigning monetary values to all social outcomes.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">FC’s Operating Principles for Impact Management</td>
+<td style="text-align: left;">Provides a common understanding of impact investing among market players. Global; applicable at corporate, fund or investment vehicle levels. Consists of 9 principles divided into 5 steps, including Independent Verification</td>
+<td style="text-align: left;">Annual disclosures, independent verification, payment of a registration fee.</td>
+<td style="text-align: left;">High acceptance among banks, DFIs, government-backed investment corporations, MDBs, non-profits, asset managers, and investment funds.</td>
+<td style="text-align: left;">Overlaps with other impact frameworks like GIIN and IMP. Efforts are ongoing to harmonize these principles with other frameworks.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">UNEP-FI</td>
+<td style="text-align: left;">Partnership between the UN and the global financial sector including banks, insurers and investors. Supports PRI, PSI and PRB. Provides tools like Impact Investing Market Map, Corporate Impact Analysis Tool, and Portfolio Impact Analysis Tool for Banks</td>
+<td style="text-align: left;">Tools use structured assessment and scoring systems based on predefined criteria and KPIs.</td>
+<td style="text-align: left;">High acceptance in the financial sector, especially among banks and insurers.</td>
+<td style="text-align: left;">Overlaps with SDG-related frameworks and industry-specific standards. Gaps in comprehensive sector-specific metrics for niche areas.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">DCED Standard</td>
+<td style="text-align: left;">Provides a tool for monitoring and evaluation of development and programmatic projects. Focuses on poverty alleviation through private sector development.</td>
+<td style="text-align: left;">Structured intervention guide with intervention summary, results chain, reulsts measurement plan, and measurements and calculations.</td>
+<td style="text-align: left;">Growing acceptance among government, philanthropic, and multilateral agencies working in the private sector development.</td>
+<td style="text-align: left;">Overlaps with other devleopment-focused frameworks. Gaps in tailored metrics for specific impact investing scenarios.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">UNEP-FI Corporate Impact Analysis Tool (CIAT)</td>
+<td style="text-align: left;">Enables financial institutions to assess the corporate impact of clients and investee companies. Based on the Positive Impact Approach, it is designed for use by larger concerns (Middle Market, Corporates, and MNCs).</td>
+<td style="text-align: left;">Structured Excel spreadsheet with various tabs explaining methodology and use, scoring system with pre-determined and user-picked weights and guidelines.</td>
+<td style="text-align: left;">Growing acceptance among large corporations and financial institutions.</td>
+<td style="text-align: left;">Overlaps with other corporate impact assessment tools. Gaps in tailored metrics for smaller enterprises and specific sectors.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">UNEP-FI Portfolio Impact Analysis Tool (PIAT)</td>
+<td style="text-align: left;">Targets banks, assesses the impact of a given bank’s portfolio, helps banks report and shape their portfolios for positive impact over time. Uses the 22 areas of the Impact Radar.</td>
+<td style="text-align: left;">Input spreadsheets for Bank Cartography and Country Needs Scores, coupled with predefined impact maps and user inputs to assess positive and negative impacts</td>
+<td style="text-align: left;">High acceptance among banks, particularly those committed to the PRB framework.</td>
+<td style="text-align: left;">Overlaps with other banking-specific impact assessment tools. Gaps in comprehensive sector-specific metrics for non-banking financial institutions.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--- End of code snippet
+-->
+</section>
+</section>
+<section id="market-growth-and-reporting-trends-in-sustainable-investing" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Market growth and reporting trends in sustainable investing</h1>
+<ol start="41" type="1">
+<li><p>The impact investing market has seen significant growth, with more investors seeking investments that align with their values while offering competitive returns. The growing awareness of global challenges such as climate change, social inequality, and biodiversity loss drives this trend. Pension funds and institutional investors increasingly commit substantial capital to sustainable investments, directing more funds toward energy transition and other impact-focused initiatives. For instance, the California Public Employees’ Retirement System recently announced a $100 billion commitment toward climate solutions by 2030, moving its portfolio closer to net zero. The New York State Common Retirement Fund also doubled its sustainable investment commitment to $40 billion to protect state pensions from climate risk. In Europe, many investors commit percentages of their investment portfolio to Sustainable Finance Disclosure Regulation (SFDR) Article 9 funds, which must fulfil specific requirements to be classified as sustainable (<span class="citation" data-cites="eisenberg2024">Eisenberg and Plakalo (<a href="#ref-eisenberg2024" role="doc-biblioref">2024</a>)</span>).</p></li>
+<li><p>The European market has witnessed a rise in specialised impact funds, with established investment firms launching new products to address specific environmental and social challenges. British global investment firm Permira launched its first energy transition fund, and private equity company EQT closed its EQT Future Fund, the most significant impact fund ever raised in private markets. Additionally, private equity firms Ardian, Eurazeo, and Tikehau have launched nature, biodiversity, and other specialised funds focused on clean hydrogen, sustainable agriculture, and energy transition funds in credit, real estate, and other underpenetrated asset classes. As these funds deploy more capital and demonstrate a track record, the industry continues to grow, offering more directed and specific solutions for limited partners. This mobilises substantial capital toward innovative solutions that address pressing environmental and social challenges (<span class="citation" data-cites="eisenberg2024">Eisenberg and Plakalo (<a href="#ref-eisenberg2024" role="doc-biblioref">2024</a>)</span>).</p></li>
+<li><p>Infrastructure investments have also drawn significant attention, with some of the largest US-based general partners and investors focusing on energy transition platforms. Firms like Brookfield, TPG Rise Climate, Apollo, Ares, Blackstone, and KKR have all announced new energy transition funds and commitments to energy transition investments over the past year. This consolidation among general partners is led primarily by large managers responding to their limited partners’ interest in increasing commitments to positive impact through infrastructure and impact investments. According to the GIIN, the five most considerable impact investing general partners accounted for 47% of the total assets under management in the impact investment market. Since last May, several top private equity firms have acquired infrastructure investing capabilities, offering a broader range of strategies to limited partners and bringing new energy transition competencies into their firms (<span class="citation" data-cites="eisenberg2024">Eisenberg and Plakalo (<a href="#ref-eisenberg2024" role="doc-biblioref">2024</a>)</span>).</p></li>
+<li><p>Impact investing in Asia is experiencing significant growth, driven by the need for financial support for expanding businesses and addressing social and environmental challenges. Over the past 15 years, particularly in Southeast Asia, impact investments have surged, with investors committing over two-thirds of the total capital from 2007–2016 in just the last three years (2020-2022). This growth includes a 40% increase in investment and projects compared to the previous three years. Development finance institutions have also maintained annual investments of around US$2 billion over the past six years. Despite these positive trends, challenges remain, such as bridging the funding gap for early-stage businesses and ensuring investments address issues like greenhouse gas emissions, gender equality, and aging populations. Initiatives like USAID’s ESG program in Vietnam highlight efforts to promote sustainable growth, supporting small and growing businesses crucial to the country’s socio-economic development and environmental sustainability. This expanding market encourages Asian companies to prioritise sustainability and social responsibility, benefiting investors and the broader community (<span class="citation" data-cites="richter2023">Richter (<a href="#ref-richter2023" role="doc-biblioref">2023</a>)</span>).</p></li>
+</ol>
+<section id="evolving-dimensions-of-impact-climate-resilience-and-energy-transitions" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="evolving-dimensions-of-impact-climate-resilience-and-energy-transitions"><span class="header-section-number">5.1</span> Evolving dimensions of impact: climate resilience and energy transitions</h2>
+<ol start="45" type="1">
+<li>Market growth trends can give us an understanding of impact dimensions that face increased scrutiny. For example, one significant dimension is the increasing focus on climate resilience and energy transition. With institutional investors like the California Public Employees’ Retirement System committing substantial capital toward climate solutions, there is a clear shift towards investments that offer financial returns and contribute to reducing greenhouse gas emissions and enhancing climate resilience. The emergence of specialised funds dedicated to clean hydrogen, sustainable agriculture, and renewable energy highlights this trend. The commitment to energy transition is further evidenced by the launch of new energy transition funds by firms such as Brookfield, TPG Rise Climate, and Apollo (<span class="citation" data-cites="eisenberg2024">Eisenberg and Plakalo (<a href="#ref-eisenberg2024" role="doc-biblioref">2024</a>)</span>).</li>
+</ol>
+</section>
+<section id="evolving-dimensions-of-impact-social-equity-and-inclusion" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="evolving-dimensions-of-impact-social-equity-and-inclusion"><span class="header-section-number">5.2</span> Evolving dimensions of impact: social equity and inclusion</h2>
+<ol start="46" type="1">
+<li><p>The alignment of investments with social and equity values is becoming a critical consideration for impact investors. This trend is driven by recognising the importance of addressing social determinants of health and well-being, as well as the need for inclusive economic growth. The rise of Sustainable Finance Disclosure Regulation (SFDR) Article 9 funds in Europe, which require strict adherence to sustainability criteria, reflects a growing demand for investments that promote social equity and address systemic inequalities (<span class="citation" data-cites="eisenberg2024">Eisenberg and Plakalo (<a href="#ref-eisenberg2024" role="doc-biblioref">2024</a>)</span>).</p></li>
+<li><p>Social equity and inclusion have also gained increased scrutiny and importance among impact investors in the Asia-Pacific region. According to the report “Advancing Impact: A Road Map for Social Investing in Asia,” several key trends have emerged. There is a growing emphasis on gender equality and women’s empowerment, with investments targeting female entrepreneurs and women-led businesses. Initiatives like Indonesia’s Ojek Syari, a female-only ride-hailing service, illustrate how social investments can address both economic empowerment and safety for women. Additionally, there is a focus on improving health and education outcomes in underserved communities. Investments in nutrition supplement companies in China and educational programs in rural India highlight commitment to addressing fundamental social determinants of health and education disparities. Furthermore, the report emphasises the importance of local context and stakeholder engagement in designing and implementing social investment projects, ensuring that interventions are culturally appropriate and have the support of the communities they aim to serve (<span class="citation" data-cites="economist2022">The Economist Group (<a href="#ref-economist2022" role="doc-biblioref">2022</a>)</span>).</p></li>
+<li><p>Other aspects under the social dimension include the impact of best practices on work environments. Certifications such as “Great Place to Work” and adherence to the Global Compact principles highlight the importance of ethical business practices, employee well-being, and corporate social responsibility. The Multidimensional Poverty Index (MPI) is another critical tool that helps investors assess and address the multifaceted nature of poverty, ensuring that investments contribute to reducing deprivation in areas such as health, education, and living standards. These frameworks and certifications not only improve the quality of work environments but also promote broader social goals, aligning business practices with the pursuit of inclusive and sustainable development.</p></li>
+</ol>
+</section>
+<section id="integrating-holistic-ecosystem-perspectives" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="integrating-holistic-ecosystem-perspectives"><span class="header-section-number">5.3</span> Integrating holistic ecosystem perspectives</h2>
+<ol start="49" type="1">
+<li><p>The need for a comprehensive and interconnected approach to impact assessment has become increasingly critical in recent years. Published reports by the (<span class="citation" data-cites="ec2023">European Commission (<a href="#ref-ec2023" role="doc-biblioref">2023</a>)</span>) and the United Nations Office for Disaster Risk Reduction (2023) highlight evolving trends that emphasise integrating a holistic ecosystem perspective within national and international nature targets. Adopting this approach is essential when addressing issues like “impact washing” and enhancing impact measurement and verification processes. Accounting frameworks like Accounting for Nature, the Natural Capital Protocol, Taskforce on Nature-related Financial Disclosures (TNFD), and SEEA emphasise a comprehensive view of ecosystems and stress their interconnectedness, where sustainable development depends on multilayered and interrelated aspects. Such frameworks help identify synergies and trade-offs within ecosystems, ensuring that the diverse services of nature are accurately evaluated and appreciated.</p></li>
+<li><p>Implementing nature-based accounting standards (NCA) is crucial to addressing impact washing. Holistic NCAs utilise detailed measurement standards that capture an aggregate range of environmental impacts. This thorough approach reduces the likelihood of overstating or falsely claiming benefits within impact investment. Impact washing deals with wrongly depicting the effects of investments, often by focusing solely on positive outcomes while neglecting negative impacts. As noted by Bendell (2019), we can only ensure we achieve our intended net societal and environmental benefits if we measure and manage both positive and negative outcomes. This requires a comprehensive impact assessment approach, integrating multi-dimensional metrics to provide an honest and accurate evaluation of investments. By adhering to rigorous, science-based frameworks such as NCAs, stakeholders can maintain transparency and accountability, ensuring that investments contribute genuinely to sustainable development goals and avoid the pitfalls of misleading impact claims. The United Nations Office for Disaster Risk Reduction (2023) report emphasises the importance of recognising co-benefits of nature-based solutions, such as biodiversity conservation, climate regulation, and improved human well-being. This aligns with ecosystem accounting principles, which advocate measuring and valuing multiple ecosystem services based on asset condition and extent assessments to inform decision-making. The implication is that impact assessments should focus on more than just single outcomes and capture the interconnected benefits and trade-offs of environmental investments.</p></li>
+<li><p>Second, stakeholders can avoid impact washing using frameworks like Accounting for Nature, the Natural Capital Protocol, or SEEA by ensuring that all relevant environmental services and ecosystem interconnections are considered through science-based metrics. This prevents the narrow focus on single metrics, which can be misleading, easily manipulated, or diminish impact returns. Instead, the frameworks can provide multi-dimensional views of impact, highlighting both positive outcomes and potential negative trade-offs within ecosystems and, therefore, impact outcomes. The report of the European Commission (2023) emphasises that the credibility and accuracy of impact assessments are heavily dependent on the quality and scientific rigour of the metrics used.</p></li>
+<li><p>Finally, the European Commission’s report (2023) emphasises the importance of considering spatial and temporal scales in impact assessments, acknowledging that nature-based solutions can have varying impacts over different geographic areas and timeframes. Additionally, the report highlights the importance of engaging stakeholders and considering the socio-economic context in designing and assessing nature-based solutions. These considerations stress the need for robust natural accounting frameworks that incorporate and promote continuous monitoring and rigorous assessment to ensure accurate and comprehensive evaluations. Integrating spatial, temporal, and socio-economic factors, nature accounting frameworks can help mitigate impact washing by ensuring that investments are transparently and accurately measured, managed and reported. A comprehensive approach enables the alignment of investment capital more closely with sustainable development goals and international standards, reinforcing genuine positive impacts of impact investments.</p></li>
+</ol>
+</section>
+<section id="environmental-health-through-sustainable-resource-management" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="environmental-health-through-sustainable-resource-management"><span class="header-section-number">5.4</span> Environmental health through sustainable resource management</h2>
+<ol start="53" type="1">
+<li><p>A well-established dimension in impact investing focuses on efforts to preserve environmental health through sustainable resource management. This dimension encompasses innovation and controls on waste and other sources of pollution, and on water and other resources management, all of which are vital for public health and community well-being. The global increase in waste production has driven the need for advanced waste management solutions, including recycling technologies and waste-to-energy systems. According to the United Nations Environment Programme (UNEP), these innovations help reduce the environmental footprint and promote resource efficiency (UNEP, 2021). Standards and certifications such as Zero Waste to Landfill and tools like LCA (Lifecycle Assessments) are continuously growing in adoption. Similarly, impact investors are increasingly supporting initiatives that tackle other pollution controls, including efforts to reduce air, noise, and water pollution, all linked to severe health issues and environmental degradation (World Health Organization, 2018). Initiatives include those that develop cleaner industrial processes, emissions reduction technologies, and sustainable agricultural practices, among others. These investments are crucial in addressing the adverse effects of pollutants on communities, particularly in densely populated urban areas where air quality concerns are most acute, and on the oceans (Intergovernmental Panel on Climate Change, 2019).</p></li>
+<li><p>Water management also plays a vital role in this dimension, particularly in regions facing water scarcity and contamination challenges. Investments are being directed toward improving water infrastructure, promoting water conservation technologies, and developing systems for better water quality monitoring and management. These efforts are essential in ensuring access to clean and safe water, which is fundamental to public health and economic development (World Resources Institute, 2020). At a corporate scale, frameworks, standards, and even credit schemes such as the Water Footprint, ISO 14046: Environmental Management-Water Footprint, LEED Water Efficiency credits, and the Alliance for Water Stewardship (AWS) Standard are also growing in demand and requirements as water scarcity becomes a more pressing issue globally (<span class="citation" data-cites="iso2018">International Organization for Standardization (<a href="#ref-iso2018" role="doc-biblioref">2018</a>)</span>).</p></li>
+<li><p>The emphasis on environmental health through sustainable resource management is further reflected as a whole in regulatory frameworks and global standards. For instance, the European Union’s Green Deal and Circular Economy Action Plan promote sustainable production and consumption patterns, encouraging investments that align with these goals. Moreover, international agreements like the Paris Agreement highlight the interconnectedness of environmental health and climate action, underscoring the need for integrated approaches to address these issues (European Commission, 2019; United Nations Framework Convention on Climate Change, 2015). In that sense, as previously mentioned, frameworks such as GRI, ISO 14001, and B Corp Certification promote environmental management practices by helping organizations minimize their environmental footprint, comply with applicable laws and regulations, and continually improve their environmental performance (<span class="citation" data-cites="gri2021">Global Reporting Initiative (<a href="#ref-gri2021" role="doc-biblioref">2021</a>)</span>).</p></li>
+<li><p>By prioritizing investments in environmental practices such as waste management, pollution control, and water management, impact investors can contribute to significant environmental and social benefits. These include improved public health outcomes, enhanced resilience to environmental changes, and the promotion of sustainable development. As awareness of these issues grows, the demand for solutions that address environmental health and sustainable resource management will likely continue to rise, making this an increasingly important dimension in the impact investment landscape.</p></li>
+</ol>
+</section>
+</section>
+<section id="implications-for-an-australian-impact-exchange" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Implications for an Australian impact exchange</h1>
+<ol start="57" type="1">
+<li><p>The Australian and global marketplace for nature-related frameworks and standards in undergoing rapid evolution and is far from a state of maturity. Different frameworks and standards have highly heterogenous subject matter scopes and methodological design. This complicates any assessment of trade-offs between different exchange design choices, and creates risks of adverse consequences and path dependencies if premature choices are made to adopt certain methods, frameworks or standards.</p></li>
+<li><p>Another complicating factor is the fundamental uncertainty concerning the scope of assets intended for listing on the proposed AIX. Establishing public exchanges based on verified environmental and social outcomes (“Impact Exchanges”) involves careful design choices—about the specific measurement and verification methods, frameworks and standards that determine market disclosures. These design choices depend fundamentally on the scope of assets or instruments that can be traded—for example Impact Exchanges focused on:</p>
+<p>– corporate securities might be best underpinned by holistic disclosure frameworks such as those maintained by the Capitals Coalition (e.g.&nbsp;the Natural Capital Protocol), or Taskforces for Nature-Related, and Climate-Related Financial Disclosures (TNFD and TCFD respectively).</p>
+<p>– enabling impact investment might be best underpinned by the existing dedicated frameworks such as Global Impact Investing Network’s (GIIN) IRIS+, the Social Return on Investment (SROI), the Social Performance Task Force (SPTF), B Impact Assessment (BIA) by B Lab, and the Impact Management Project (IMP).</p>
+<p>– commodities or real property may be well matched with primary low-level measurement frameworks such as those developed for specific sectoral raw material supply chains (e.g.&nbsp;apparel, minerals and metals, etc), or environmental characteristics (e.g.&nbsp;pollution levels, in-situ biodiversity).</p></li>
+<li><p>An alternative approach for AIX to consider is to adopt “meta-standards” that establish key priorities and principles (transparency, methodological replicability, clarity of scope and focus, etc) for disclosure of all nature-related frameworks and standards utilised by assets traded on the exchange. This approach has analogies in other fast-moving sectors (e.g.&nbsp;telecommunication regulation) and could ensure a balance between flexible innovation, coherent methodological specialisation for specific traded asset classes, and investor requirements.</p></li>
+<li><p>Further research is needed to establish and stress test the specific principles and requirements that would be incorporated into the “meta-standard” for environmental and social metrics. Some candidate principles are summarised below:</p>
+<ul>
+<li><p>Principle 1: Traded assets should disclose both their primary environmental and social outcomes (quantified or qualified as appropriate) and the methodological basis for assessing those outcomes.</p></li>
+<li><p>Principle 2: The disclosed methodological basis for disclosure should be compatible with certain quality standards intended to support alignment with general fiduciary principles and Australian consumer regulation. They should:</p>
+<ul>
+<li><p>(2A) Transparently document their definitional foundations, input data and assessment methods. Low-level environmental definitions should be aligned with the SEEA as appropriate, in particular to avoid confusion between measurement of environmental stocks (e.g.&nbsp;the extent and/or condition of specific ecosystem types aligned to the IUCN Global Ecosystem Typology) and flows of goods and services from the environment to the economy (e.g.&nbsp;carbon sequestration, regulation of waste, flows of raw materials).</p></li>
+<li><p>(2B) Clearly document their functional, geographical and value chain scope coverage (e.g.&nbsp;1+2 vs 3) and use pre-defined categories aligned to the SEEA and other relevant global statistical standards.</p></li>
+</ul></li>
+</ul></li>
+<li><p>We also suggest that a standing technical committee should be incorporated into the governance planning for the AIX with a clear remit to iteratively refine and develop meta-standards concerning social and environmental outcome disclosure, and facilitate pre-competitive dialogue between different frameworks, standards and approaches.</p></li>
+<li><p>A pragmatic alternative to the “meta-standards” approach suggested above would be to establish an Impact Exchange based on clear social and environmental outcome metrics for which there is short-term market demand, regardless of asset class. One advantage of this approach is the ability to generate liquidity and positive margins that could be reinvested into improving and scaling the Impact Exchange. A key risk is that metrics may evolve in response to ad-hoc demand drivers without sufficient attention to generating the coherence, robustness and transparency needed to bring investment in environmental and social outcomes to scale. The fundamental structural deficiencies of both voluntary and statutory carbon markets identified in recent years offers a pertinent cautionary tale.</p></li>
+</ol>
+</section>
+<section id="appendix" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Appendix</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="media/Appendix4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Overview of ESG Strategies"><img src="media/Appendix4.png" class="img-fluid figure-img" alt="Overview of ESG Strategies"></a></p>
+<figcaption>Overview of ESG Strategies</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="media/Appendix3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Overview of Impact Investment Strategies"><img src="media/Appendix3.png" class="img-fluid figure-img" alt="Overview of Impact Investment Strategies"></a></p>
+<figcaption>Overview of Impact Investment Strategies</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="media/Appendix2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Green Finance and Social Finance"><img src="media/Appendix2.png" class="img-fluid figure-img" alt="Green Finance and Social Finance"></a></p>
+<figcaption>Green Finance and Social Finance</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="media/Appendix1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Governance and Ethical Investing"><img src="media/Appendix1.png" class="img-fluid figure-img" alt="Governance and Ethical Investing"></a></p>
+<figcaption>Governance and Ethical Investing</figcaption>
+</figure>
+</div>
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-eisenberg2024" class="csl-entry" role="listitem">
+Eisenberg, M., and Z. Plakalo. 2024. <span>“4 Key Trends Driving Private Market Impact Funds: One <span>CEO</span> Explains.”</span> <em>World Economic Forum</em>. <a href="https://www.weforum.org/agenda/2024/05/4-key-trends-driving-private-market-impact-funds/">https://www.weforum.org/agenda/2024/05/4-key-trends-driving-private-market-impact-funds/</a>.
+</div>
+<div id="ref-ec2023" class="csl-entry" role="listitem">
+European Commission. 2023. <span>“Impact Assessment Study to Support the Development of Legally Binding <span>EU</span> Nature Restoration Targets: Final Report.”</span> Publications Office of the European Union. <a href="https://op.europa.eu/en/publications">https://op.europa.eu/en/publications</a>.
+</div>
+<div id="ref-gri2021" class="csl-entry" role="listitem">
+Global Reporting Initiative. 2021. <span>“<span>GRI</span> Standards.”</span> Global Reporting Initiative. <a href="https://www.globalreporting.org/standards">https://www.globalreporting.org/standards</a>.
+</div>
+<div id="ref-iso2018" class="csl-entry" role="listitem">
+International Organization for Standardization. 2018. <span>“<span>ISO</span> 14046: Environmental Management - Water Footprint.”</span> International Organization for Standardization. <a href="https://www.iso.org/standard/43263.html">https://www.iso.org/standard/43263.html</a>.
+</div>
+<div id="ref-richter2023" class="csl-entry" role="listitem">
+Richter, F. J. 2023. <span>“The Next Big Trend: Asian Impact Investing.”</span> <em>Horasis</em>. <a href="https://horasis.org/the-next-big-trend-asian-impact-investing/">https://horasis.org/the-next-big-trend-asian-impact-investing/</a>.
+</div>
+<div id="ref-economist2022" class="csl-entry" role="listitem">
+The Economist Group. 2022. <span>“Advancing Impact: A Road Map for Social Investing in Asia.”</span> The Economist.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>See for example: Nature-based credit markets at a crossroads, Nature Sustainability: <a href="https://doi.org/10.1038/s41893-024-01403-w" class="uri">https://doi.org/10.1038/s41893-024-01403-w</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Intentionality is a fundamental aspect of impact investing; investors must explicitly state their intention to generate social or environmental benefits (GIIN, 2022).<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Impact investments must have measurable outcomes, which should be quantifiable on a qualitative or quantitative basis, and performance must be reported transparently (Bundesinitiative Impact Investing; GIIN, 2022).<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Additionality refers to the unique impact an investment would only have achieved with the specific funding. Active investor engagement and sharing best practices are vital for attaining additionality and fostering growth in impact investing (Bundesinitiative Impact Investing; GIIN, 2022).<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Using evidence to substantiate the intended impact is essential in impact investing, which involves using data and research to guide investment decisions and prove that investments lead to meaningful social or environmental changes (GIIN, 2022).<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>See: <a href="https://capitalscoalition.org/wp-content/uploads/2021/01/NCC_Protocol.pdf" class="uri">https://capitalscoalition.org/wp-content/uploads/2021/01/NCC_Protocol.pdf</a><a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@report{schram,_marianne_feoli,_ben_milligan,
+  author = {Schram, Marianne Feoli, Ben Milligan, Arlette},
+  title = {Measurement and Verification of Environmental and Social
+    Outcomes for a Proposed {Australian} {Impact} {Exchange}},
+  date = {},
+  doi = {10.1128/AEM.02591-07},
+  langid = {en},
+  abstract = {Impact Exchanges require distinct measurement frameworks
+    across asset classes (corporate securities, impact investments,
+    commodities) due to fundamental differences in how environmental and
+    social outcomes are quantified, verified, and reported within each
+    market segment. We propose use of a “meta-standards” approach for
+    incorporating measurement of environmental and social
+    outcomes—establishing overarching principles for outcome measurement
+    while allowing methodological flexibility - supported by a technical
+    committee to ensure market integrity and framework interoperability.
+    Short-term market demands for simple metrics must be balanced
+    against systemic risks, as evidenced by carbon markets where
+    inadequate standardization and verification led to market
+    fragmentation and credibility issues.}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-schram,_marianne_feoli,_ben_milligan" class="csl-entry quarto-appendix-citeas" role="listitem">
+Schram, Marianne Feoli, Ben Milligan, Arlette. n.d. <span>“Measurement
+and Verification of Environmental and Social Outcomes for a Proposed
+Australian Impact Exchange.”</span> <em>CSDR Discussion Papers</em>. <a href="https://doi.org/10.1128/AEM.02591-07">https://doi.org/10.1128/AEM.02591-07</a>.
+</div></div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>
