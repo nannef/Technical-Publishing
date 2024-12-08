@@ -3,7 +3,7 @@ title: Measurement and verification of environmental and social outcomes for a p
 shorttitle: Research Brief 24.08 (private draft)
 shortauthors: UNSW CSDR
 authors:
-  - name: Arlette Schram, Marianne Feoli, Ben Milligan
+  - name: Arlette Schramm, Marianne Feoli, Ben Milligan
     orcid: 0000-0003-1313-3956
     corresponding: true
     email: b.milligan@unsw.edu.au
@@ -86,7 +86,7 @@ citation:
 
 <!-- -->
 
-8.  In contrast, ESG reporting focuses on the broader disclosure of an organisation's environmental, social, and governance practices. Standards such as the Global Reporting Initiative (GRI), Sustainability Accounting Standards Board (SASB), Task Force on Climate-related Financial Disclosures (TCFD), and the Greenhouse Gas Protocol (GHG Protocol) help organisations provide transparent information on their ESG performance, manage related risks, and ensure regulatory compliance. Integrating various strategies within AIX could be beneficial to ensure robust impact measurement and verification, enhancing credibility and effectiveness in driving sustainable development:
+8.  In contrast, ESG reporting focuses on the broader disclosure of an organisation's environmental, social, and governance practices. Standards such as the Global Reporting Initiative (GRI), Sustainability Accounting Standards Board (SASB), Task Force on Climate-related Financial Disclosures (TCFD), and the Greenhouse Gas Protocol (GHG Protocol) help organisations provide structured and transparent information on their ESG performance, manage related risks, and ensure regulatory compliance. Integrating various strategies within AIX could be beneficial to ensure robust impact measurement and verification, enhancing credibility and effectiveness in driving sustainable development:
 
 ![Methodology for market studies on sustainability-related investments. Source: <https://www.eurosif.org/wp-content/uploads/2024/02/2024.02.15-Final-Report-Eurosif-Classification_2024.pdf>](media/Picture%202.png)
 
@@ -100,11 +100,11 @@ citation:
 
 12. These guidelines help generate verified scores that can be used on the AIX to assess ESG score measurement and verification, offering transparency and credibility to investors and helping them understand the efficiency and implementation of an ESG-based investment strategy. For investor reporting, standards like the UN Principles for Responsible Investment (UNPRI), the Global Impact Investing Network (GIIN), and the Impact Management Project (IMP) guide investors in aligning their strategies with responsible investment principles and measuring impact. These standards can be leveraged within the AIX marketplace to provide investors with precise, standardised data, facilitating informed decision-making and ensuring that investments, such as impact investments, meet desired social and environmental criteria.
 
-13. Regarding GHG emissions, accounting approaches range from VERRA and Accounting for Nature to the ISO standards and the EU Emissions Trading System (EU ETS). Comprehensive ecosystem assessments can rely on the System of Environmental-Economic Accounting (SEEA), which can build a critical basis for integrating more holistic and comprehensive impact assessments. While IRIS+ is commonly used to quantify or report qualitatively on the impact of impact investments, integrating SEEA can enhance the ability to assess broader ecological impacts systematically and from a more holistic perspective. Incorporating varied frameworks can support the robust and transparent outcome measurement and verification of a digital finance exchange, foster trust, and attract diverse investors.
+13. Regarding GHG emissions, accounting approaches range in scope and aims from VERRA and Accounting for Nature to the ISO standards and the EU Emissions Trading System (EU ETS). Comprehensive ecosystem assessments can rely on the System of Environmental-Economic Accounting (SEEA), which can build a critical basis for integrating more holistic and comprehensive impact assessments. While IRIS+ is commonly used to quantify or report qualitatively on the impact of impact investments, integrating SEEA can enhance the ability to assess broader ecological impacts systematically and from a more holistic perspective. Incorporating varied frameworks can support the robust and transparent outcome measurement and verification of a digital finance exchange, foster trust, and attract diverse investors.
 
 ## Categorisation of measurement and verification standards
 
-14. The current measurement and verification standards landscape for institutional investment can be differentiated based on the applied strategy (for example, ESG) or impact dimensions such as climate, ecological health, and social impact. This classification can help identify the relevant standards for each dimension, guiding principles, and frameworks. The impact dimensions cover the primary areas where impacts occur and are reported on, aligning them with the AIX project's objectives. The following illustration by the IRIS shows the interconnectedness of IRIS+ impact categories and themes as of May 2021 and can help guide meta governance structures for desired outcomes:
+14. The current measurement and verification standards landscape for institutional investment can be differentiated based on the applied strategy (for example, ESG, Triple Bottom Line), overaching goal (for example risk management, reputation, regulatory compliance) or impact dimensions such as climate, ecological health, and social impact (among others). This classification can help identify the relevant standards for each dimension, guiding principles, and frameworks. The impact dimensions cover the primary areas where impacts occur and are reported on, aligning them with the AIX project's objectives. The following illustration by the IRIS shows the interconnectedness of IRIS+ impact categories and themes as of May 2021 and can help guide meta governance structures for desired outcomes:
 
 ![Interconnectedness of IRIS+ Impact Categories and Themes as of May 2021](media/Picture%203.jpg)
 
