@@ -178,11 +178,6 @@ kable(data[1:7, ], caption = "Overview of Climate-related Disclosure and Reporti
 
 27. The GHG Protocol and ISO 14064 are mature and widely adopted standards that provide comprehensive frameworks. Their global acceptance and methodologies make them essential tools for organisations committed to transparency, regulatory compliance, and effective climate action. The GHG protocol provides comprehensive standards and guidelines for organisations to quantify and report their GHG emissions, covering various sectors and activities. It provides methodologies for calculating emissions from direct (Scope 1), indirect energy (Scope 2), and other indirect sources (Scope 3).
 
-    -   ISO 14064 is an international standard developed by the International Organization for Standardization (ISO) that provides guidelines and requirements for greenhouse gas emissions and removals. ISO 14064 is divided into three parts:
-    -   ISO 14064-1: Specifies principles and requirements for quantifying and reporting GHG emissions and removals at the organisation level.
-    -   ISO 14064-2: Guides at the project level for quantifying, monitoring, and reporting GHG emission reductions or removal enhancements.
-    -   ISO 14064-3 Offers guidelines for validating and verifying GHG assertions, ensuring the accuracy and reliability of GHG reports.
-
 28. Other standards that focus on climate change and GHG emissions are outlined below:
 
 ```{=html}
