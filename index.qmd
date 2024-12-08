@@ -170,7 +170,7 @@ kable(data[1:7, ], caption = "Overview of Climate-related Disclosure and Reporti
 
 24. Each framework has specific requirements for measurement and verification. IRIS+ and IMP emphasise standardised metrics and consistent data collection, with third-party audits often used for verification. SROI requires detailed data on inputs, outputs, and financial proxies, with stakeholder engagement and third-party validation. SPTF uses outreach and social responsibility indicators, with self-reporting and external audits. BIA involves a structured questionnaire and comprehensive assessment, verified through third-party audits for B Corp certification. The most widely accepted standards include IRIS+, IMP, and BIA, which are highly regarded globally among impact investors and financial institutions. SROI and SPTF are also gaining acceptance, particularly in the non-profit and microfinance sectors.
 
-25. Despite their wide acceptance, these frameworks often overlap in their methodologies and objectives. For example, IRIS+ and IMP share common elements in defining and standardising impact metrics. However, gaps remain in sector-specific metrics for niche areas and challenges in assigning monetary values to all social outcomes, as seen with SROI. Understanding these overlaps and gaps is crucial for developing a comprehensive and credible impact assessment strategy, ensuring investments align with broader social and environmental goals.
+25. Despite their wide acceptance, these frameworks often overlap in their methodologies and objectives. For example, IRIS+ and IMP share common elements in defining and standardising impact metrics. However, gaps remain in sector-specific metrics for niche areas and challenges in assigning monetary values to all social outcomes, as seen with SROI. Understanding these overlaps and gaps is crucial for developing a comprehensive and credible impact assessment strategy, ensuring investments align with broader social and environmental goals. Furthermore, Standards differ in their approach to verification and certification. Some, like ISO standards, require formal verification to certify compliance with specific criteria, ensuring that organizations meet the established standard. Others, such as the Global Reporting Initiative (GRI), are primarily guidelines that companies align with, and verification may depend on regional regulations or organizational preferences—sometimes it is required, other times optional. Verification also varies in scope: standards like GRI verify the accuracy of reported statements, ISO standards verify compliance with detailed requirements, and frameworks like Science-Based Targets initiative (SBTi) assess whether an organization's efforts genuinely aim to drive meaningful change.
 
 ## Measurement and verification: climate change and GHG emissions
 
@@ -209,7 +209,7 @@ kable(data[1:8, ], caption = "Overview of Climate Change and GHG Emissions Measu
 
 ## Measurement and verification of ecological health
 
-29. Standards for measuring ecological health are essential for protecting and restoring biodiversity and ecosystem services. The frameworks focus on assessing and reporting the condition of natural assets such as soils, vegetation, and fauna. The following paragraphs introduces various ecological health standards and compares them, analysing their purpose, scope, market acceptance, strengths, and weaknesses to highlight their roles in impact measurement.
+29. Standards for measuring ecological health are essential for protecting and restoring biodiversity and ecosystem services. The frameworks focus on assessing and reporting the condition of natural assets such as soils, water, vegetation, and fauna. The following paragraphs introduces various ecological health standards and compares them, analysing their purpose, scope, market acceptance, strengths, and weaknesses to highlight their roles in impact measurement.
 
 30. Accounting for Nature is a framework designed to measure and report the condition of environmental assets, offering a standardised approach to assessing ecosystem health. It encompasses a wide range of natural resources, providing data to support informed decision-making in environmental management. Its science-based methodology aims to enhance the understanding and conservation of ecosystems, aligning with global environmental policies.
 
@@ -225,7 +225,7 @@ kable(data[1:8, ], caption = "Overview of Climate Change and GHG Emissions Measu
 
 <!-- -->
 
-35. As outlined in the table below, other frameworks for nature-related measurement and verification have proliferated in recent years, with heterogenous conceptual foundations and scope.
+35. As outlined in the table below, other frameworks for nature-related measurement and verification have proliferated in recent years, with heterogeneous conceptual foundations and scope.
 
 ```{=html}
 <!--- This code reads a table from a csv file and displays it at the desired font size. Change the header.tex for PDF output
